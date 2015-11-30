@@ -1,4 +1,4 @@
-package ro.mariusr.scala
+package ro.mariusr.scala.p01_classes
 
 class Customer5(forename: String, initial: String, surname: String) { // primary constructor
   val fullname = String.format("%s %s. %s", forename, initial, surname)

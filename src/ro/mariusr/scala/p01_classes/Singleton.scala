@@ -1,4 +1,4 @@
-package ro.mariusr.scala
+package ro.mariusr.scala.p01_classes
 
 import java.util.logging.Level
 

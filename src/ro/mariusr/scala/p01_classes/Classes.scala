@@ -1,4 +1,4 @@
-package ro.mariusr.scala
+package ro.mariusr.scala.p01_classes
 
 /**
   * Default constructor with two parameters: name, address

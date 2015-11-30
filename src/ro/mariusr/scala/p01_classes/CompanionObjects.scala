@@ -1,4 +1,4 @@
-package ro.mariusr.scala
+package ro.mariusr.scala.p01_classes
 
 /**
   * Scala doesn't have the static keyword or something equivalent.
