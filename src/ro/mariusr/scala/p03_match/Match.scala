@@ -20,7 +20,6 @@ object Match {
 
     println(quarter)
 
-
     // matching exceptions
     try {
       val url = new URL("httpd://www.google.ro")
