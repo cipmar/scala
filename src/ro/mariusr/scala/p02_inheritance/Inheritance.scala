@@ -60,7 +60,7 @@ object DiscountedCustomer {
     c.add(Item(2))
     c.add(Item(3))
     c.add(new Item(0) {
-      // anonymous classes are ccreated in the same way as in Java
+      // anonymous classes are created in the same way as in Java
       override def price = 2.5
     })
     println(c.total)
