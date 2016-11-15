@@ -1,0 +1,32 @@
+/*
+    Nested if
+*/
+
+public void main(String[] args) {
+    String string;
+    String month = "November";
+    String string2 = month;
+    boolean bl = "March".equals(string2) ? true : ("April".equals(string2) ? true : "May".equals(string2));
+    if (bl) {
+        string = "It's spring";
+    } else {
+        boolean bl2 = "June".equals(string2) ? true : ("July".equals(string2) ? true : "August".equals(string2));
+        if (bl2) {
+            string = "It's summer";
+        } else {
+            boolean bl3 = "September".equals(string2) ? true : ("October".equals(string2) ? true : "November".equals(string2));
+            if (bl3) {
+                string = "It's autumn";
+            } else {
+                boolean bl4 = "December".equals(string2) ? true : ("January".equals(string2) ? true : "February".equals(string2));
+                if (bl4) {
+                    string = "It's winter";
+                } else {
+                    throw new MatchError((Object)string2);
+                }
+            }
+        }
+    }
+    String season = string;
+    Predef..MODULE$.print((Object)season);
+}
