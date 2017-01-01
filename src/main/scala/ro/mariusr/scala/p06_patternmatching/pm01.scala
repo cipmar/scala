@@ -3,7 +3,7 @@ package ro.mariusr.scala.p06_patternmatching
 /**
   * Pattern Matching - Literal Match
   */
-object pm_01 {
+object pm01 {
   def main(args: Array[String]): Unit = {
     def matchMonth(month: String) = month match {
       case "March"     | "April"   | "May" => "It's spring"
@@ -12,6 +12,6 @@ object pm_01 {
       case "December"  | "January" | "February" => "It's winter"
     }
 
-    print(matchMonth("November"))
+    print(matchMonth("November")) // will print "It's autumn"
   }
 }
