@@ -1,21 +1,19 @@
 package ro.mariusr.scala.p06_patternmatching
 
+import scala.collection.SeqLike
+
 /**
   * Created by mariusrop on 21.12.2016.
   */
 object Arrays {
   def main(args: Array[String]): Unit = {
-    val array = Array(1)
+    val array = Array(1, 2, 3, 4)
 
     array match {
-      case Array(a, b, _*) => print("at least two elements")
-      case Array(a, _*) => print("one element")
+      case Array(x, y, _*) => print(s"first element - $x, second one - $y")
+      case Array(x, _*) => print("only one element")
+      case _ => println("empty!")
     }
-
-/*
-    def fib(a: Array[Int]) = a match {
-      case Array(a, b, rest) => a + b + fib(rest)
-    }
-*/
+    println(Array.unapplySeq(array).get.lengthCompare(8))
   }
 }

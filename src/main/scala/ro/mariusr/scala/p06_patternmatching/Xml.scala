@@ -1,6 +1,6 @@
 package ro.mariusr.scala.p06_patternmatching
 
-import scala.xml.Node
+import scala.xml.{Elem, Node}
 
 /**
   * XML patterns
@@ -20,5 +20,7 @@ object Xml {
       case <description>{description}</description> => println(s"Description: $description")
       case _ => println("Oops")
     }
+
+    for (bookNode <- book \ "_") handleBookNode(bookNode)
   }
 }
